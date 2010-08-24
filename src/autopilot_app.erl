@@ -1,4 +1,4 @@
--module(sonny_app).
+-module(autopilot_app).
 
 -behaviour(application).
 
@@ -10,7 +10,7 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    sonny_sup:start_link().
+    autopilot_sup:start_link().
 
 stop(_State) ->
     ok.

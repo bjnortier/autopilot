@@ -1,5 +1,4 @@
-
--module(sonny_sup).
+-module(autopilot_sup).
 
 -behaviour(supervisor).
 

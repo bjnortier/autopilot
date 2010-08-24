@@ -1,2 +1,2 @@
 #!/bin/sh
-erl -pa ebin -pa deps/*/ebin -s sonny
+erl -pa ebin -pa deps/*/ebin -s autopilot

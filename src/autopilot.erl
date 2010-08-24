@@ -1,6 +1,6 @@
--module(sonny).
+-module(autopilot).
 -export([start/0]).
 
 start() ->
     application:start(explane),
-    application:start(sonny).
+    application:start(autopilot).
