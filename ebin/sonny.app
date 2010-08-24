@@ -5,4 +5,4 @@
               {applications,[kernel,stdlib]},
               {mod,{sonny_app,[]}},
               {env,[]},
-              {modules,[sonny_app,sonny_sup]}]}.
+              {modules,[sonny,sonny_app,sonny_sup]}]}.
