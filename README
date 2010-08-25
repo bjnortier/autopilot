@@ -1,0 +1,19 @@
+Requirements
+------------
+
+1. Erlang R13B04 
+2. Explane 9
+
+Getting started
+---------------
+
+1. Start X-Plane and set the UDP output port to 20001 (under the menus Settings -> Net Connections -> Advanced
+2. Enable rows 3, 18 and 20
+
+
+2. Compile and run the autopilot
+$./rebar get-deps
+$./rebar compile
+$./start.sh
+
+
