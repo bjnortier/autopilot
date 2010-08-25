@@ -11,7 +11,7 @@ function init(port) {
             var obj = JSON.parse(receivedMsg);
             altitude = Math.round(obj.altitude);
             speed = Math.round(obj.speed);
-            roll = -obj.roll/180*Math.PI;
+            roll = obj.roll/180*Math.PI;
             pitch = obj.pitch/180*Math.PI;
             draw();
         } catch(e) {

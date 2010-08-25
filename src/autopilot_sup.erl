@@ -45,10 +45,10 @@ handle_websocket(Ws) ->
         {explane, Values} ->
             Ws:send(
               lists:concat(["{",
-                            "\"altitude\":" , round(proplists:get_value(altitude, Values)*1000)/1000, ","
-                            "\"speed\":" , round(proplists:get_value(speed, Values)*1000)/1000, ","
-                            "\"roll\":" , round(proplists:get_value(roll, Values)*1000)/1000, ","
-                            "\"pitch\":" , round(proplists:get_value(pitch, Values)*1000)/1000, 
+                            "\"altitude\":" , round(proplists:get_value(altitude, Values, 0)*1000)/1000, ","
+                            "\"speed\":" , round(proplists:get_value(speed, Values, 0)*1000)/1000, ","
+                            "\"roll\":" , round(proplists:get_value(roll, Values, 0)*1000)/1000, ","
+                            "\"pitch\":" , round(proplists:get_value(pitch, Values, 0)*1000)/1000, 
                             "}"])),
             handle_websocket(Ws);
         _Ignore ->
